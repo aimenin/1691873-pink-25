@@ -1,7 +1,7 @@
-# Личный проект «Пинк» 
+# Личный проект «Пинк»
 
-* Студент: [Артем Именин](https://up.htmlacademy.ru/adaptive/25/user/1691873).
-* Наставник: `Неизвестно`.
+- Студент: [Артем Именин](https://up.htmlacademy.ru/adaptive/25/user/1691873).
+- Наставник: [Захар Овчаров](https://htmlacademy.ru/profile/id906939).
 
 ---
 
