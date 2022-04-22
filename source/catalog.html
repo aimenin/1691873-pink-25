@@ -42,8 +42,8 @@
       </section>
       <section class="gallery">
         <div class="gallery__item person-gallery">
-          <div class="person-gallery__photo--day-photo"></div>
-          <div class="person-gallery__info--day-photo">
+          <div class="person-gallery__photo person-gallery__photo--day-photo"></div>
+          <div class="person-gallery__info person-gallery__info--day-photo">
             <h3 class="person-gallery__name"><b>Анна</b>(5 минут назад)</h3>
             <p class="person-gallery__text">Прыгать или нет? Напишите в
               комментарии свой совет и
@@ -134,6 +134,21 @@
               Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </div>
+      </section>
+      <section class="redactor">
+        <img class="redactor__image" src="./img/photo-7-tablet.png" alt="redactor-image"/>
+        <form class="redactor__form form-edit">
+          <fieldset class="form-edit__edit-contollers">
+            <button class="form-edit__controller-button form-edit__controller-button--active"><img src="./img/crop.svg" alt="crop-button"/></button>
+            <input type="range" class="form-edit__range visually-hidden">
+            <button class="form-edit__controller-button"><img src="./img/fill.svg" alt="fill-button"/></button>
+            <input type="range" class="form-edit__range visually-hidden">
+            <button class="form-edit__controller-button"><img src="./img/contrast.svg" alt="contrast-button"/></button>
+            <input type="range" class="form-edit__range">
+          </fieldset>
+          <button class="form-edit__button">Запостить</button>
+          <button class="form-edit__button form-edit__button--disabled">Отмена</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
