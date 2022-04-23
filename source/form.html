@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo logo">
+          <img src="img/glasses.svg" alt="logo-image" width="59" height="40" class="logo__image">
+          <p class="logo__text">PINK</p>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a>Главная</a></li>
+            <li class="site-list__item"><a>Фотографии</a></li>
+            <li class="site-list__item"><a>Конкурс</a></li>
+            <li class="site-list__item"><a>HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Слоган нашего приложения</h1>
+
+      <section class="page-description">
+        <div class="page-description__wrapper">
+          <div class="page-description__up-part">
+            <h2 class="page-description__header">
+              Конкурс на самое безбашенное путешествие с Пинк
+            </h2>
+          </div>
+          <div class="page-description__bottom-part">
+            <p class="page-description__text">Поделитесь своей историей и получите
+              шанс выиграть ценный приз — 1000
+              миль на вашу бонусную карту! </p>
+          </div>
+        </div>
+      </section>
+      <section class="user-information">
+        <div class="popup visually-hidden">
+          <h3 class="popup__heading">Что-то пошло не так!</h3>
+          <p class="popup__text">Проверьте поля, выделенные красным,
+            скорее всего вы забыли их заполнить</p>
+          <button class="success-button">ОК</button>
+        </div>
+        <div class="user-information__wrapper">
+          <form class="user-information__form form-contest">
+            <fieldset class="form-contest__inputs-list inputs-list">
+              <div class="inputs-list__item">
+                <label class="input-list__label" for="last-name">Укажите вашу фамилию</label>
+                <input class="inputs-list__input inputs-list__input--required" id="last-name">
+              </div>
+              <div class="inputs-list__item">
+                <label class="input-list__label" for="name">Введите ваше имя</label>
+                <input class="inputs-list__input inputs-list__input--required" id="name">
+              </div>
+              <div class="inputs-list__item">
+                <label class="input-list__label" for="middle-name">Отчество</label>
+                <input class="inputs-list__input" id="middle-name">
+              </div>
+            </fieldset>
+            <fieldset class="form-contest__inputs-list chooser-list">
+              <legend class="chooser-list__heading">Ваши безбашенные достижения в путешествии</legend>
+
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="shark">Сделал селфи с акулой</lable>
+                <input type="checkbox" id="shark" name="shark">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="beach">Обгорел на пляже</lable>
+                <input type="checkbox" id="beach" name="beach">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="chuck">Видел Чака Норриса</lable>
+                <input type="checkbox" id="chuck" name="chuck">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="souvenirs">Накупил сувениров</lable>
+                <input type="checkbox" id="souvenirs" name="souvenirs">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="tower">Удержал башню</lable>
+                <input type="checkbox" id="tower" name="tower">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="hotel">Рагромил отель</lable>
+                <input type="checkbox" id="hotel" name="hotel">
+              </div>
+            </fieldset>
+            <fieldset class="form-contest__inputs-list inputs-list">
+              <legend class="inputs-list__legend">Контактная информация</legend>
+
+              <div class="inputs-list__item">
+                <label class="input-list__label" for="phone-number" type="tel">Номер телефона</label>
+                <input class="inputs-list__input" id="phone-number">
+              </div>
+              <div class="inputs-list__item">
+                <label class="input-list__label" for="mail" type="email">Адрес почты</label>
+                <input class="inputs-list__input inputs-list__input--required" id="mail">
+              </div>
+            </fieldset>
+            <fieldset class="form-contest__inputs-list chooser-list">
+              <legend class="chooser-list__heading">С каким приложением путешествовали</legend>
+
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="ios">Pink для IOS</lable>
+                <input type="radio" id="ios" name="app">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="android">Pink на Android</lable>
+                <input type="radio" id="android" name="app">
+              </div>
+              <div class="chooser-list__item">
+                <lable class="chooser-list__lable" for="windows">Windows Phone</lable>
+                <input type="radio" id="windows" name="app">
+              </div>
+            </fieldset>
+            <fieldset class="form-contest__inputs-list inputs-reviews">
+              <legend class="inputs-reviews__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <textarea class="inputs-reviews__text">Можно прям в красках, не
+                стесняясь в выражениях</textarea>
+            </fieldset>
+            <button class="success-button">Отправить форму</button>
+            <p class="form-contest__reference"><span>*</span> - обязательное поле</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo logo">
+          <img src="img/glasses.svg" alt="logo-image" width="59" height="40" class="logo__image">
+          <p class="logo__text">PINK</p>
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://vk.com/">
+                <img src="img/vk.svg" alt="vk-social" class="social__image">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://telegram.org/">
+                <img src="img/telegram.svg" alt="telegram-social" class="social__image">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.youtube.com/">
+                <img src="img/youtube.svg" alt="youtube-social" class="social__image">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <div class="copyright__text">Разработано:</div>
+          <img src="img/htmlacademy.svg" alt="copyright-image" width="27" height="34" class="copyright__image">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
